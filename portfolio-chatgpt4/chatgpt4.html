@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="chatgpt4.css">
+    <style>
+        .back-button {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #f44336;
+            color: #ffffff;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-button" href="../index.html">Go Back</a>
+    <header>
+        <h1>John Doe</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <!-- About me section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm John Doe, a web developer with experience in HTML, CSS, and JavaScript. I enjoy building modern and responsive websites that provide a great user experience.</p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Name</h3>
+                <p>A short description of the project.</p>
+                <a href="https://www.example.com/project-demo" target="_blank">Live Demo</a>
+                <a href="https://www.github.com/username/project-repo" target="_blank">Source Code</a>
+            </div>
+            <div class="project">
+                <h3>Project Name 2</h3>
+                <p>A short description of the project.</p>
+                <a href="https://www.example.com/project-demo" target="_blank">Live Demo</a>
+                <a href="https://www.github.com/username/project-repo" target="_blank">Source Code</a>
+            </div>
+        </section>
+
+        <!-- Contact me section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 John Doe. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
