@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bard.css">
+  <style>
+    .back-button {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: #f44336;
+        color: #ffffff;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+        background-color: #d32f2f;
+    }
+</style>
 </head>
 <body>
+  <a class="back-button" href="javascript:history.back()">Go Back</a>
   <header class="container">
     <h1>My Portfolio</h1>
     <nav>
