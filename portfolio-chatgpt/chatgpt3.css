@@ -1,9 +1,15 @@
-/* Global styles */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f7f7f7;
+    color: #333333;
+    line-height: 1.6;
 }
 
 .container {
@@ -12,132 +18,72 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px; /* Adjust spacing between navigation items */
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    color: #ffffff;
 }
 
-nav ul li a:hover {
-    color: #ff7043;
-}
-
-/* Sections */
 section {
-    padding: 40px 0;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
 }
 
-h2 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+section h2 {
+    margin-bottom: 20px;
 }
 
 .project {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-}
-
-.project h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Contact form */
-form {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 form label {
     display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 form input,
 form textarea {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
+form button {
+    background-color: #333333;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
 }
 
-form input[type="submit"]:hover {
-    background-color: #ff7043;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
-    font-size: 14px;
 }
 
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 24px;
-    }
-
-    .project {
-        padding: 10px;
-    }
-
-    form {
-        padding: 10px;
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
     }
 }
