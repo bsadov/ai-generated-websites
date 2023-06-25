@@ -26,24 +26,54 @@
 </head>
 <body>
 	<a class="back-button" href="../index.html">Go Back</a>
-	<header>
-		<h1>About Me</h1>
-	</header>
-
-	<section id="about">
-		<h2>About Me</h2>
-		<p>Insert your bio here.</p>
-	</section>
-
-	<section id="projects">
-		<h2>Projects</h2>
-		<p>Insert your projects here.</p>
-	</section>
-
-	<section id="contact">
-		<h2>Contact Me</h2>
-		<p>Insert your contact information here.</p>
-	</section>
-
+    <div class="container">
+       <div class="navbar">
+           <!-- Navigation bar with links to each section -->
+           <a href="#about">About Me</a>
+           <a href="#projects">Projects</a>
+           <a href="#contact">Contact Me</a>
+       </div>
+       <div class="section" id="about">
+           <!-- About me section with an image and a paragraph -->
+           <h2>About Me</h2>
+           <div class="about">
+               <!-- Placeholder image with the same size as me.jpg -->
+               <img src="https://via.placeholder.com/300x300" alt="Me">
+               <p>Hi, I'm a master web developer with over 10 years of experience in creating beautiful and functional websites. I have expertise in HTML, CSS, JavaScript, PHP, and WordPress. I love learning new technologies and solving problems. I'm passionate about web design and development and I'm always looking for new challenges and opportunities.</p>
+           </div>
+       </div>
+       <div class="section" id="projects">
+           <!-- Projects section with a grid of images and titles -->
+           <h2>Projects</h2>
+           <div class="projects">
+               <div class="project">
+                   <!-- Placeholder image with the same size as project1.jpg -->
+                   <img src="https://via.placeholder.com/400x200" alt="Project 1">
+                   <h3>Project 1</h3>
+               </div>
+               <div class="project">
+                   <!-- Placeholder image with the same size as project2.jpg -->
+                   <img src="https://via.placeholder.com/400x200" alt="Project 2">
+                   <h3>Project 2</h3>
+               </div>
+               <div class="project">
+                   <!-- Placeholder image with the same size as project3.jpg -->
+                   <img src="https://via.placeholder.com/400x200" alt="Project 3">
+                   <h3>Project 3</h3>
+               </div>
+           </div>
+       </div>
+       <div class="section" id="contact">
+        <!-- Contact me section with a form -->
+        <h2>Contact Me</h2>
+        <p>If you have any questions or inquiries, please fill out the form below and I will get back to you as soon as possible.</p>
+        <form action="send.php" method="post">
+            <!-- A form with input fields and a button -->
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
